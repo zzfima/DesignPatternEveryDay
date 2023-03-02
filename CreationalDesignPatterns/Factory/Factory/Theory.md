@@ -11,7 +11,7 @@ it received. In simple words, if we have a superclass and n number of subclasses
 and based on the data provided, if we have to create and return the object of one of the subclasses, 
 then we need to use the Factory Design Pattern in C#.
 
-In the Factory Design pattern, we create an object without exposing the object creation logic to 
+In the Factory Design pattern, we create an object <u>without exposing the object creation logic</u> to 
 the client and the client will refer to the newly created object using a common interface. 
 The basic principle behind the factory design pattern is that, at run time, 
 we get an object of a similar type based on the parameter we pass.
