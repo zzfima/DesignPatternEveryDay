@@ -1,18 +1,15 @@
-﻿namespace Factory
+﻿internal class Platinum : ICreditCard
 {
-    internal class Platinum : ICreditCard
+    public string GetCardType()
     {
-        public string GetCardType()
-        {
-            return "Platinum Plus";
-        }
-        public int GetCreditLimit()
-        {
-            return 35000;
-        }
-        public int GetAnnualCharge()
-        {
-            return 2000;
-        }
+        return "Platinum Plus";
+    }
+    public int GetCreditLimit()
+    {
+        return 35000;
+    }
+    public int GetAnnualCharge()
+    {
+        return 2000;
     }
 }

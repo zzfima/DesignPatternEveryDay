@@ -1,6 +1,4 @@
-﻿using Factory;
-
-//Generally we will get the Card Type from UI.
+﻿//Generally we will get the Card Type from UI.
 //Here we are hardcoded the card type
 string cardType = "MoneyBack";
 ICreditCard cardDetails = null;

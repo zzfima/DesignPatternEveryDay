@@ -1,7 +1,4 @@
-﻿using Factory;
-
-
-internal static class CreditCardFactory
+﻿internal static class CreditCardFactory
 {
     internal static ICreditCard GetCreditCard(string cardType)
     {
@@ -19,6 +16,7 @@ internal static class CreditCardFactory
         {
             cardDetails = new Platinum();
         }
+
         if (cardDetails != null)
         {
             Console.WriteLine("CardType : " + cardDetails.GetCardType());
