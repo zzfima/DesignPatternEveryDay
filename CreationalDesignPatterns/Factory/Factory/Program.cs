@@ -8,6 +8,6 @@ ICreditCard? cardDetails;
 //appropriate type instance using if else condition'
 cardDetails = CreditCardFactory.GetCreditCard(cardType);
 
-Console.WriteLine(cardDetails.GetCardType());
+Console.WriteLine($"Card type: {cardDetails.GetCardType()}");
 
 Console.ReadLine();
