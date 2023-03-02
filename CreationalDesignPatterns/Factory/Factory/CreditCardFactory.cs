@@ -2,7 +2,7 @@
 {
     internal static ICreditCard GetCreditCard(string cardType)
     {
-        ICreditCard cardDetails = null;
+        ICreditCard? cardDetails = null;
 
         if (cardType == "MoneyBack")
         {
