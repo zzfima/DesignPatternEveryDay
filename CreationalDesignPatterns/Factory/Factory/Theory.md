@@ -17,9 +17,11 @@ The basic principle behind the factory design pattern is that, at run time,
 we get an object of a similar type based on the parameter we pass.
 
 ## What is the Problem of the above code implementation?
-The above code implementation introduces the following problems
+The above code implementation introduces the following problems: 
 
-First, the tight coupling between the client class (Program) and Product Class (MoneyBack, Titanium, and Platinum).
+First, the tight coupling between the client class (Program) and Product Class (MoneyBack, 
+Titanium, and Platinum).
+
 Secondly, if we add a new Credit Card, then also we need to modify the Main method by 
 adding an extra if-else condition which not only overheads in the development but also in the testing process
 
@@ -32,7 +34,8 @@ with a simple mechanism to create the object.
 
 ## Problems of Simple Factory Pattern in C#
 If we need to add any new product (i.e. new credit card) then we need to add a new 
-if else condition in the GetCreditCard method of the CreditCardFactory class. 
+if-else condition in the GetCreditCard method of the CreditCardFactory class. 
 This violates the open/closed design principle.
+
 We also have a tight coupling between the Factory (CreditCardFactory) class and 
 product classes (MoneyBack, Titanium, and Platinum).
