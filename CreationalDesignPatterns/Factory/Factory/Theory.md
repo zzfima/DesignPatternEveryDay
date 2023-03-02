@@ -22,3 +22,17 @@ The above code implementation introduces the following problems
 First, the tight coupling between the client class (Program) and Product Class (MoneyBack, Titanium, and Platinum).
 Secondly, if we add a new Credit Card, then also we need to modify the Main method by 
 adding an extra if-else condition which not only overheads in the development but also in the testing process
+
+## When to use the Factory Design Pattern in real-time applications?
+It would not be a good programming approach to specify the exact class name 
+while creating the objects by the client which leads to tight coupling between 
+the client and the product. To overcome this problem, we need to use the 
+Factory Design Pattern in C#. This design pattern provides the client 
+with a simple mechanism to create the object.
+
+## Problems of Simple Factory Pattern in C#
+If we need to add any new product (i.e. new credit card) then we need to add a new 
+if else condition in the GetCreditCard method of the CreditCardFactory class. 
+This violates the open/closed design principle.
+We also have a tight coupling between the Factory (CreditCardFactory) class and 
+product classes (MoneyBack, Titanium, and Platinum).
