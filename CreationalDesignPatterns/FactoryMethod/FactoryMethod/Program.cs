@@ -1,10 +1,14 @@
-﻿namespace FactoryMethod
+﻿using FactoryMethod.Factory;
+
+namespace FactoryMethod
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var cardFacrory = new TitaniumFactory();
+            var card = cardFacrory.CreateProduct();
+            Console.WriteLine($"card: {card.GetCardType()}");
 
             Console.ReadLine();
         }
