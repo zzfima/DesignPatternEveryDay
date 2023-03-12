@@ -1,4 +1,4 @@
-﻿namespace Factory
+﻿namespace Factory.CreditCards
 {
     internal interface ICreditCard
     {

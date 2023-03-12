@@ -1,4 +1,6 @@
-﻿internal class Titanium : ICreditCard
+﻿using Factory.CreditCards;
+
+internal class Titanium : ICreditCard
 {
     public string GetCardType()
     {

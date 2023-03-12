@@ -1,5 +1,7 @@
 ﻿//Generally we will get the Card Type from UI.
 //Here we are hardcoded the card type
+using Factory.CreditCards;
+
 string cardType = "MoneyBack";
 
 ICreditCard? cardDetails;

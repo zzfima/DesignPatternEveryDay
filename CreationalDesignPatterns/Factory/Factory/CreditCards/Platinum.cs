@@ -1,4 +1,6 @@
-﻿internal class Platinum : ICreditCard
+﻿using Factory.CreditCards;
+
+internal class Platinum : ICreditCard
 {
     public string GetCardType()
     {

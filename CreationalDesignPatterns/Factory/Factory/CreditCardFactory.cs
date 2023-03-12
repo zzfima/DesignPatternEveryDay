@@ -1,4 +1,6 @@
-﻿internal static class CreditCardFactory
+﻿using Factory.CreditCards;
+
+internal static class CreditCardFactory
 {
     internal static ICreditCard GetCreditCard(string cardType)
     {

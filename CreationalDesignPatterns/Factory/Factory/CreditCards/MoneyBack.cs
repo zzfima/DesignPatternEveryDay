@@ -1,4 +1,6 @@
-﻿internal class MoneyBack : ICreditCard
+﻿using Factory.CreditCards;
+
+internal class MoneyBack : ICreditCard
 {
     public string GetCardType()
     {
