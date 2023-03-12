@@ -1,4 +1,6 @@
-﻿namespace Prototype
+﻿using Prototype.Models;
+
+namespace Prototype
 {
     internal interface IEmployeePrototype
     {

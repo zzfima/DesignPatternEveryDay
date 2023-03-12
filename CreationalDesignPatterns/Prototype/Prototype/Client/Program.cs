@@ -1,4 +1,4 @@
-﻿using Prototype;
+﻿using Prototype.Models;
 
 var emp1 = new Employee { Name = "Vasja", Department = "OMD" };
 var emp2 = emp1.GetClone();
