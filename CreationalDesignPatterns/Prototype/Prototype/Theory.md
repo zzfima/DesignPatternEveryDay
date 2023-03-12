@@ -8,3 +8,6 @@ Prototype Design Patternw will create a new complete copy of the object. It shal
 2. MemberwiseClone Method only copies the non-static fields of the object to the new object.
 3. In the process of copying, if a field is a value type, a bit by bit copy of the field is performed. 
 If a field is a reference type, the reference is copied but the referenced object is not.
+
+### Deep Copy
+In case of deep copy, also on reference types clone method shall be called.
