@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory
+﻿namespace AbstractFactory.Controls
 {
     internal class Windows7Button : IButton
     {

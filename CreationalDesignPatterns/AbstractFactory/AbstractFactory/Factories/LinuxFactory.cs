@@ -1,6 +1,8 @@
-﻿namespace AbstractFactory
+﻿using AbstractFactory.Controls;
+
+namespace AbstractFactory.Factories
 {
-    internal class LinuxControl : IControlOS
+    internal class LinuxFactory : IControlFactory
     {
         public IButton CreateButton()
         {

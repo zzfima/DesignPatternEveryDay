@@ -1,7 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-using AbstractFactory;
+﻿using AbstractFactory.Factories;
 
-var control = new LinuxControl();
+var control = new LinuxFactory();
 var button = control.CreateButton();
 var txtBox = control.CreateTextBox();
 Console.WriteLine($"button event handler: {button.OnClickEventName}, textbox text: {txtBox.Text}");

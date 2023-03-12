@@ -1,4 +1,4 @@
-﻿namespace AbstractFactory
+﻿namespace AbstractFactory.Controls
 {
     public interface IButton
     {
