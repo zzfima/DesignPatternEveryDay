@@ -1,4 +1,6 @@
-﻿namespace Builder.Builders
+﻿using Builder.Models;
+
+namespace Builder.Builders
 {
     internal interface IEmployeeReportBuilder
     {

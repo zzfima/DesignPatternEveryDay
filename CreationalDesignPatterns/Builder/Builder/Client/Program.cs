@@ -1,6 +1,6 @@
-﻿using Builder;
-using Builder.Builders;
+﻿using Builder.Builders;
 using Builder.Directors;
+using Builder.Models;
 
 var employees = new List<Employee>()
 {
