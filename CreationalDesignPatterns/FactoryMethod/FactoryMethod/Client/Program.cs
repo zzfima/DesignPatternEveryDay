@@ -1,6 +1,6 @@
 ﻿using FactoryMethod.Factory;
 
-namespace FactoryMethod
+namespace FactoryMethod.Client
 {
     internal class Program
     {
