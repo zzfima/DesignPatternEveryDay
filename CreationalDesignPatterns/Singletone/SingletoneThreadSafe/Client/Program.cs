@@ -18,5 +18,14 @@ Parallel.Invoke(new Action[]{
     new Action(() =>SingletoneTS.GetInstance.PrintDetails("World5")),
     new Action(() =>SingletoneTS.GetInstance.PrintDetails("World6")),});
 
+Console.WriteLine("**************************");
+
+Parallel.Invoke(new Action[]{
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace1")),
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace2")),
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace3")),
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace4")),
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace5")),
+    new Action(() =>SingletoneTSDoubleCheck.GetInstance.PrintDetails("Peace6")),});
 
 Console.ReadLine();
