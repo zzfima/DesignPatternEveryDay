@@ -1,6 +1,6 @@
 ﻿namespace Singletone.Models
 {
-    public class Singleton
+    public partial class Singleton
     {
         private static int counter = 0;
         private static Singleton instance = null;
@@ -24,15 +24,6 @@
         public void PrintDetails(string message)
         {
             Console.WriteLine(message);
-        }
-
-        public class DerivedSingletone : Singleton
-        {
-            public void DerivedPrintDetails(string message)
-            {
-                base.PrintDetails(message);
-                Console.WriteLine("derived " + message);
-            }
         }
     }
 }
