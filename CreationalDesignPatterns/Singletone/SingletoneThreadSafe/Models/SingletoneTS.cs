@@ -9,8 +9,8 @@
         private static SingletoneTS instance = null;
         private static object instanceLock = new object();
 
-        //Lazy initialization - until and unless we invoke the GetInstance Property of the
-        //SingletoneTS class, the Singleton instance is not created.
+        //Lazy initialization = on-demand object creation:
+        //until and unless we invoke the GetInstance Property of the SingletoneTS class, the SingletoneTS instance is not created.
         public static SingletoneTS GetInstance
         {
             get
