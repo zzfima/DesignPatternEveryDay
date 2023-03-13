@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singletone", "Singletone\Singletone.csproj", "{BF78C9E2-7105-47BC-A306-73E7441A77CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singletone", "Singletone\Singletone.csproj", "{BF78C9E2-7105-47BC-A306-73E7441A77CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletoneNotSealed", "SingletoneNotSealed\SingletoneNotSealed.csproj", "{9FA39041-FD8C-47BC-AC1E-2FCA0FBF0794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletoneNotSealed", "SingletoneNotSealed\SingletoneNotSealed.csproj", "{9FA39041-FD8C-47BC-AC1E-2FCA0FBF0794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletoneThreadSafe", "SingletoneThreadSafe\SingletoneThreadSafe.csproj", "{B2923F14-D7CA-49E3-B1C7-561D73DCD4E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9FA39041-FD8C-47BC-AC1E-2FCA0FBF0794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FA39041-FD8C-47BC-AC1E-2FCA0FBF0794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FA39041-FD8C-47BC-AC1E-2FCA0FBF0794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2923F14-D7CA-49E3-B1C7-561D73DCD4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2923F14-D7CA-49E3-B1C7-561D73DCD4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2923F14-D7CA-49E3-B1C7-561D73DCD4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2923F14-D7CA-49E3-B1C7-561D73DCD4E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
