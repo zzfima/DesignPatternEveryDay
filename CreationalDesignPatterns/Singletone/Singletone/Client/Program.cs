@@ -1,8 +1,8 @@
 ﻿using Singletone.Models;
 
 Singleton fromTeachaer = Singleton.GetInstance;
-fromTeachaer.PrintDetails("From Teacher");
+Singleton.PrintDetails("From Teacher");
 Singleton fromStudent = Singleton.GetInstance;
-fromStudent.PrintDetails("From Student");
+Singleton.PrintDetails("From Student");
 
 Console.ReadLine();

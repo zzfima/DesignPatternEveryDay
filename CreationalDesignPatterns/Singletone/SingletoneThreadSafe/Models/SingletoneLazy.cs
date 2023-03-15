@@ -3,7 +3,7 @@
     internal sealed class SingletoneLazy
     {
         private static int counter = 0;
-        private static Lazy<SingletoneLazy> instance = new Lazy<SingletoneLazy>(() => new SingletoneLazy());
+        private static readonly Lazy<SingletoneLazy> instance = new(() => new SingletoneLazy());
 
         public static SingletoneLazy GetInstance
         {
@@ -16,7 +16,7 @@
             Console.WriteLine("Counter Value Lazy" + counter.ToString());
         }
 
-        public void PrintDetails(string message)
+        public static void PrintDetails(string message)
         {
             Console.WriteLine($"[[[ {message} ]]]");
         }

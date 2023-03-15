@@ -6,8 +6,8 @@
     internal sealed class SingletoneTS
     {
         private static int counter = 0;
-        private static SingletoneTS instance = null;
-        private static object instanceLock = new object();
+        private static SingletoneTS? instance;
+        private static readonly object instanceLock = new ();
 
         //Lazy initialization = on-demand object creation:
         //until and unless we invoke the GetInstance Property of the SingletoneTS class, the SingletoneTS instance is not created.
@@ -31,7 +31,7 @@
             Console.WriteLine("Counter Value TS " + counter.ToString());
         }
 
-        public void PrintDetails(string message)
+        public static void PrintDetails(string message)
         {
             Console.WriteLine($"### {message} ###");
         }

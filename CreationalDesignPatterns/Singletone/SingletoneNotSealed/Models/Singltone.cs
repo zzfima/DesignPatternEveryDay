@@ -3,7 +3,7 @@
     public partial class Singleton
     {
         private static int counter = 0;
-        private static Singleton instance = null;
+        private static Singleton? instance;
 
         public static Singleton GetInstance
         {
@@ -21,7 +21,7 @@
             Console.WriteLine("Counter Value " + counter.ToString());
         }
 
-        public void PrintDetails(string message)
+        public static void PrintDetails(string message)
         {
             Console.WriteLine(message);
         }

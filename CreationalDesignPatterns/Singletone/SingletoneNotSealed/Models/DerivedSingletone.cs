@@ -6,7 +6,7 @@
         {
             public void DerivedPrintDetails(string message)
             {
-                base.PrintDetails(message);
+                PrintDetails(message);
                 Console.WriteLine("derived " + message);
             }
         }

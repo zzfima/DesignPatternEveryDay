@@ -6,8 +6,8 @@
     internal sealed class SingletoneTSDoubleCheck
     {
         private static int counter = 0;
-        private static SingletoneTSDoubleCheck instance = null;
-        private static object instanceLock = new object();
+        private static SingletoneTSDoubleCheck? instance;
+        private static readonly object instanceLock = new();
 
         //Lazy initialization = on-demand object creation:
         //until and unless we invoke the GetInstance Property of the SingletoneTSDoubleCheck class, the SingletoneTSDoubleCheck instance is not created.
@@ -35,7 +35,7 @@
             Console.WriteLine("Counter Value TS DoubleCheck" + counter.ToString());
         }
 
-        public void PrintDetails(string message)
+        public static void PrintDetails(string message)
         {
             Console.WriteLine($"@@@ {message} @@@");
         }
