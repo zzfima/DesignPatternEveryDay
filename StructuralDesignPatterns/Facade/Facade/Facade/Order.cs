@@ -1,18 +1,24 @@
-﻿public class Order : IOrder
+﻿using Facade.Models;
+using System;
+
+namespace Facade.Facade
 {
-    public void PlaceOrder()
+    public class Order : IOrder
     {
-        Console.WriteLine("Place Order Started");
+        public void PlaceOrder()
+        {
+            Console.WriteLine("Place Order Started");
 
-        Product product = new Product();
-        product.GetProductDetails();
+            Product product = new();
+            product.GetProductDetails();
 
-        Payment payment = new Payment();
-        payment.MakePayment();
+            Payment payment = new();
+            payment.MakePayment();
 
-        Invoice invoice = new Invoice();
-        invoice.Sendinvoice();
+            Invoice invoice = new();
+            invoice.Sendinvoice();
 
-        Console.WriteLine("Order Placed Successfully");
+            Console.WriteLine("Order Placed Successfully");
+        }
     }
 }

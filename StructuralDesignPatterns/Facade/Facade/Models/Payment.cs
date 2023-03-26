@@ -1,4 +1,6 @@
-﻿public class Payment
+﻿using System;
+
+public class Payment
 {
     public void MakePayment()
     {

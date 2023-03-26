@@ -1,4 +1,15 @@
-﻿IOrder order = new Order();
-order.PlaceOrder();
+﻿using Facade.Facade;
+using System;
 
-Console.ReadLine();
+namespace FacadeClient
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            IOrder order = new Order();
+            order.PlaceOrder();
+            Console.ReadLine();
+        }
+    }
+}

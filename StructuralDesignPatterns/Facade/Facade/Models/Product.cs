@@ -1,7 +1,12 @@
-﻿public class Product
+﻿using System;
+
+namespace Facade.Models
 {
-    public void GetProductDetails()
+    public class Product
     {
-        Console.WriteLine("Fetching the Product Details");
+        public void GetProductDetails()
+        {
+            Console.WriteLine("Fetching the Product Details");
+        }
     }
 }

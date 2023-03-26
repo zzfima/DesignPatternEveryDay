@@ -1,7 +1,12 @@
-﻿public class Invoice
+﻿using System;
+
+namespace Facade.Models
 {
-    public void Sendinvoice()
+    public class Invoice
     {
-        Console.WriteLine("Invoice Send Successfully");
+        public void Sendinvoice()
+        {
+            Console.WriteLine("Invoice Send Successfully");
+        }
     }
 }
